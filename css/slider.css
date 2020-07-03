@@ -1,0 +1,144 @@
+/*Обнуление*/
+*,*:before,*:after{
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+.wrapper{
+	height: 100%;
+    padding: 57px 50px 27px 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width:767px){
+	.wrapper{padding: 50px 10px;}
+}
+
+/* Основные стили */
+
+/* Слайдер */
+.slick-slider{
+	min-width: 0;
+}
+/* Ограничивающая оболочка */
+.slick-list {
+	overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track{
+	display: flex;
+	align-items: flex-start;
+}
+
+/* Слайд */
+.slick-slide{}
+/* Слайд активный */
+.slick-slide.slick-active{
+
+}
+/* Слайд основной */
+.slick-slide.slick-current{
+	
+}
+/* Слайд по центру */
+.slick-slide.slick-center{
+}
+
+/* Стрелка */
+.slick-arrow{
+	display: block;
+}
+/* Стрелка влево */
+.slick-arrow.slick-prev{}
+/* Стрелка вправо */
+.slick-arrow.slick-next{}
+/* Стрелка не активная */
+.slick-arrow.slick-disabled{}
+
+/* Точки */
+.slider .slick-dots{
+	padding-top: 85px;
+	padding-bottom: 18px;
+}
+.feedbacks .slider .slick-dots{
+	padding-top: 27px;
+	padding-bottom: 18px;
+}
+.feedbacks .slider .slick-dots li{
+	margin: 0;
+	margin-right: 5px;
+}
+.feedbacks .slider .slick-dots button{
+	width: 7px;
+    height: 7px;
+}
+
+/* Конкретный слайдер */
+.slider {
+	position: relative;
+	padding: 0px 170px 0 174px;
+}
+
+@media (max-width:767px){
+	.slider {
+		padding: 0px 40px;
+	}
+}
+
+.slider .slick-arrow{
+	position: absolute;
+    top: 50%;
+    margin: -25px 0px 0px 0px;
+    z-index: 10;
+    font-size: 0;
+    width: 19px;
+    height: 45px;
+}
+.slider .slick-arrow.slick-prev{
+	left: 2.5%;
+	background: url('../img/sl-arrow_l.svg') 0 0 / 100% no-repeat;
+	cursor: pointer;
+}
+.slider .slick-arrow.slick-next{
+	right: 1.3%;
+	background: url('../img/sl-arrow_r.svg') 0 0 / 100% no-repeat;
+	cursor: pointer;
+}
+.slider .slick-arrow.slick-disabled{
+	opacity: 0.2;
+}
+
+.slider .slick-dots{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.slider .slick-dots li{
+	list-style: none;
+	margin: 0px 10px;
+}
+.slider .slick-dots button{
+	font-size: 0;
+	width: 10px;
+	height: 10px;
+	background-color: rgb(22, 102, 241);
+	border-radius: 50%;
+}
+
+.slider .slick-dots li.slick-active button{
+	background-color: transparent;
+	border: 1px solid #fff;
+}
+
+.slider__item {
+}
+.slider__item img{
+	max-width: 100%;
+}
+.slider__item.slick-center{
+	
+}
+
